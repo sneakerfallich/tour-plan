@@ -548,4 +548,13 @@ template {
     width: 99px;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .navbar-top {
+    padding: 28px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
