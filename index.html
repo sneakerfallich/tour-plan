@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,800&display=swap"
@@ -87,7 +88,33 @@
           <span class="rating__counter">4.5/5</span>
         </div>
       </div>
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide.jpg" alt="slide">
+              </div>
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
