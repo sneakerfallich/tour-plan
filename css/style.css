@@ -960,5 +960,8 @@ template {
   .navbar-top {
     padding: 28px 0;
   }
+  .slider {
+    height: 250px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
