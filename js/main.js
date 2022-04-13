@@ -29,3 +29,4 @@ const rewiewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
+
