@@ -10,21 +10,129 @@
     margin-bottom: 70px
   &__wrapper
     display: grid
+    grid-template-columns: 350px 350px 350px
+    gap: 30px
   &__card
     position: relative
     width: 350px
     height: 500px
-    grid-template-rows: 250px 250px
+    grid-template-rows: 1fr 1fr
+    border-radius: 8px
+    overflow: hidden
     &--main
       display: grid
-      grid-template-columns: 366px 364px
-      column-gap: 44px
+      grid-column-start: 1
+      grid-column-end: 3
+      grid-template-columns: 1fr 1fr
       width: 730px
       height: 500px
+  &__picture
+    position: relative
+    height: 250px
+    &--main
+      width: 365px
+      height: 500px
+  &__offer
+    position: absolute
+    color: $light
+    background-color: $primary
+    font-style: normal
+    font-size: 8px
+    line-height: 10px
+    width: 60px
+    padding: 4px 9px
+    margin-top: 26px
+    border-radius: 0px 4px 4px 0px
+    &--main
+      position: absolute
+      color: $light
+      background-color: $primary
+      font-style: normal
+      font-size: 12px
+      line-height: 15px
+      width: 95px
+      padding: 8px 12px
+      margin-top: 26px
+      border-radius: 0px 4px 4px 0px
+
   &__image
     width: 350px
     height: 250px
+    object-fit: cover
     &--main
-      width: 366px
+      width: 365px
       height: 500px
       object-fit: cover
+  &__info
+    background-color: $dark
+    color: $light
+    height: 250px
+    width: 350px
+    padding: 30px 21px 25px 32px
+    &--main
+      background-color: $dark
+      color: $light
+      width: 365px
+      height: 500px
+      padding: 46px 21px 30px 43px
+  &__rating
+    margin-bottom: 6px
+  &__title
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    margin: 0
+  &__description
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 160.6%
+    margin-top: 27px
+    margin-bottom: 34px
+    width: 300px
+  &__place
+    padding-top: 23px
+  &__text
+    display: grid
+    grid-template-columns: 15px auto
+    column-gap: 14px
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 11px
+  &__booking
+    display: grid
+    grid-template-columns: 85px 120px
+    column-gap: 92px
+    margin-top: 26px
+  &__price
+    display: grid
+    grid-template-rows: 18px 30px
+    row-gap: 5px
+  &__sale
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+    text-decoration: line-through
+  &__pricetag
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 30px
+    white-space: nowrap
+  &__button
+    align-self: end
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    background-color: $primary
+    border-radius: 4px
+    height: 40px
+    border: none
+    cursor: pointer
+    padding: 0
