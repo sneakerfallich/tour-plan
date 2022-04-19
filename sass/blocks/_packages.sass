@@ -29,9 +29,28 @@
   &__picture
     position: relative
     height: 250px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 59.34%, #0A223D 99.85%)
+      z-index: -1
     &--main
+      position: relative
       width: 365px
       height: 500px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+        z-index: -1
   &__offer
     position: absolute
     color: $light
@@ -56,13 +75,17 @@
       border-radius: 0px 4px 4px 0px
 
   &__image
+    position: absolute
     width: 350px
     height: 250px
     object-fit: cover
+    z-index: -2
     &--main
+      position: absolute
       width: 365px
       height: 500px
       object-fit: cover
+      z-index: -2
   &__info
     background-color: $dark
     color: $light

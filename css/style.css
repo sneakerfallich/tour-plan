@@ -846,9 +846,32 @@ template {
   height: 250px;
 }
 
+.packages__picture:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 59.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
 .packages__picture--main {
+  position: relative;
   width: 365px;
   height: 500px;
+}
+
+.packages__picture--main:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
 }
 
 .packages__offer {
@@ -878,17 +901,21 @@ template {
 }
 
 .packages__image {
+  position: absolute;
   width: 350px;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -2;
 }
 
 .packages__image--main {
+  position: absolute;
   width: 365px;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -2;
 }
 
 .packages__info {
