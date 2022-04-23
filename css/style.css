@@ -454,6 +454,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -1111,6 +1112,11 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
