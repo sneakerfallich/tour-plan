@@ -18,7 +18,7 @@
     top: 50%
     left: 50%
     max-width: 478px
-    max-height: 487px
+    min-height: 487px
     padding: 33px 88px
     background-color: $dark
     transform: translate(-50%, -50%)
@@ -27,7 +27,7 @@
     z-index: 101
     visibility: hidden
     opacity: 0
-    transition: opacity 0.2s
+    transition: opacity 0.2stop
     &--visible
       visibility: visible
       opacity: 1
@@ -42,8 +42,7 @@
     font-weight: 700
     font-size: 18px
     line-height: 23px
-    margin-top: 0
-    margin-bottom: 15px
+    margin: 0
     text-transform: uppercase
     text-align: center
   &__form
@@ -53,12 +52,13 @@
     flex-wrap: wrap
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
   &__message
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
   &__button
     padding: 18px
+    margin-top: 15px
   &__info
     font-style: normal
     font-weight: 700
