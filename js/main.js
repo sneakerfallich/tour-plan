@@ -77,7 +77,8 @@ menuButton.on('click', function () {
     phone: {
       required: "Телефон обязателен"
     },
-  }
+  } 
     });
     })
+  AOS.init();
 });
